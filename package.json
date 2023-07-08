@@ -1,0 +1,31 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "Ecommerce app with MERN STACK",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sanchit-Warang/Ecommerce.git"
+  },
+  "author": "Sanchit Warang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sanchit-Warang/Ecommerce/issues"
+  },
+  "homepage": "https://github.com/Sanchit-Warang/Ecommerce#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "dotenv": "^16.3.1",
+    "nodemon": "^2.0.22"
+  }
+}
